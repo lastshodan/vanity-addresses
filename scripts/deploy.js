@@ -13,9 +13,8 @@ async function main() {
 
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  
     // Deploy ENSRegistry
-
+  
     const ENSRegistry = await ethers.getContractFactory("ENSRegistry");
     console.log("Deploying ENSRegistry....");
     const ensRegistry = await ENSRegistry.deploy();
@@ -30,8 +29,8 @@ async function main() {
     await publicResolver.deployed();
     console.log("PublicResolver address:", publicResolver.address); 
 
-
     // Deploy Registrar
+  
     const Registrar = await ethers.getContractFactory("Registrar");
     console.log("Deploying Registrar....");
     const registrar = await Registrar.deploy(ensRegistry.address,MIN_COMMITMENT_AGE,MAX_COMMITMENT_AGE);

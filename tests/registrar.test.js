@@ -1,12 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 const { expect } = require("chai");
 const { BigNumber } = require("ethers");
-const {
-    BN,           // Big Number support
-    constants,    // Common constants, like the zero address and largest integers
-    expectEvent,  // Assertions for emitted events
-    expectRevert, // Assertions for transactions that should fail
-  } = require('@openzeppelin/test-helpers');
+const { BN, constants, expectEvent, expectRevert } = require('@openzeppelin/test-helpers');
 
 const MIN_COMMITMENT_AGE = 13; // seconds--one ethereum block
 const MAX_COMMITMENT_AGE = 26; // Seconds--two ethereum blocks

@@ -56,8 +56,6 @@ contract Registrar is Ownable {
      //@param _base The address of the ENS registry.
     constructor(ENS ensAddr, uint _minCommitmentAge, uint _maxCommitmentAge){
         require(_maxCommitmentAge > _minCommitmentAge); 
-        // base = _base; BaseRegistrar _base
-        // prices = _prices; PriceOracle _prices
         ens = ensAddr;
         minCommitmentAge = _minCommitmentAge;
         maxCommitmentAge = _maxCommitmentAge;      

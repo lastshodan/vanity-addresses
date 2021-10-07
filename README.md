@@ -1,6 +1,6 @@
 # vanity-address-system
  Ethereum system for converting ethereum addresses to vanity addresses.The system prevents front running through a commit reveal scheme.
- The Main contract is `contracts/registrar.sol` which is used to register addresses.The system uses the Ethereum Naming Service as its bases.
+ The Main contract is `contracts/registrar.sol` which is used to register addresses.
  
 # To Deploy:
  

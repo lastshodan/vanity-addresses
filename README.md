@@ -3,7 +3,9 @@
  The Main contract is `contracts/registrar.sol` which is used to register addresses.The system uses the Ethereum Naming Service as its bases.
  
 # To Deploy:
- Please run `ganache-cli`
+ Please run `npm init`
+
+ then run `ganache-cli`
  
  then run `deploy.sh`
  
